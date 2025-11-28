@@ -1,0 +1,58 @@
+.mainFxmlClass{
+    -fx-background-color: linear-gradient(to bottom right, #0a1f44, #4fa3d9);
+}
+
+/* TITLE */
+.title-label{
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.subtitle-label{
+    -fx-text-fill: #dff2ff;
+}
+
+.btn-register{
+    -fx-background-color: #0b3c5d;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 25;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, #000000, 8, 0.3, 0, 4);
+    -fx-border-color: #7ec8ff;
+    -fx-border-radius: 25;
+    -fx-border-width: 1.2;
+}
+
+.btn-register:hover{
+    -fx-background-color: #145a8d;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.btn-login{
+    -fx-background-color: white;
+    -fx-text-fill: #000080;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+
+    -fx-background-radius: 25;
+    -fx-cursor: hand;
+
+    /* Aksen biru dibelakang */
+    -fx-border-color: #4fa3d9;
+    -fx-border-radius: 25;
+    -fx-border-width: 2;
+
+    -fx-effect: dropshadow(gaussian, #4fa3d9, 10, 0.6, 0, 3);
+}
+
+/* Hover effect */
+.btn-login:hover{
+    -fx-background-color: #e9f6ff;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+
+    -fx-effect: dropshadow(gaussian, #000080, 12, 0.6, 0, 4);
+}

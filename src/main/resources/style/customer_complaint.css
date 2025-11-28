@@ -1,0 +1,22 @@
+/* ==== TEXT === */
+.label, .text {
+    -fx-fill: #0b2f5e;
+    -fx-text-fill: #0b2f5e;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* SUBMIT BUTTON - WHITE */
+.button#btnSubmit {
+    -fx-background-color: white;
+    -fx-text-fill: #2e7d32;        /* tulisan hijau biar masih selaras */
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-border-color: #2e7d32;     /* border hijau */
+    -fx-border-radius: 8;
+    -fx-border-width: 2;
+    -fx-cursor: hand;
+}
+
+.button#btnSubmit:hover {
+    -fx-background-color: #f3f7f3; /* putih agak abu pas hover */
+}

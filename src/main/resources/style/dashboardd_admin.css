@@ -1,0 +1,59 @@
+.mainFxmlClass {
+    -fx-background-color: white;
+}
+
+
+.left-form {
+    -fx-background-color: linear-gradient(to bottom, #051937, #003466, #0a1a2f);
+}
+
+
+.text, .label {
+    -fx-text-fill: white;
+}
+
+.button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #d9ecff;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-border-color: #74b3ff;
+    -fx-border-width: 1.2;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #74b3ff;
+    -fx-text-fill: #051937;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-effect: dropshadow(gaussian, #74b3ff, 12, 0.6, 0, 0);
+}
+
+
+#btnLogout {
+    -fx-background-color: red;
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+}
+
+#btnLogout:hover {
+    -fx-background-color: darkred;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.card, .detail-button {
+    -fx-background-color: linear-gradient(to bottom right, #0a2a66, #4fa3ff);
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: #b6dcff;
+    -fx-border-width: 1.5;
+}
+
+.card:hover, .detail-button:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}

@@ -1,0 +1,93 @@
+/* Root background */
+.root {
+    -fx-background-color: #f4f6fa;
+    -fx-font-family: "Segoe UI";
+}
+
+/* Main card container */
+.receipt-card {
+    -fx-background-color: #ffffff;
+    -fx-padding: 20;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-border-color: #1e88ff;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.15), 10, 0.2, 0, 4);
+}
+
+/* Title */
+.main-title {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1e3c72;
+}
+
+/* E-ticket badge */
+.e-ticket-label {
+    -fx-background-color: #1e88ff;
+    -fx-text-fill: white;
+    -fx-padding: 4 15;
+    -fx-background-radius: 20;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+/* Section title */
+.section-title {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+/* Labels inside content */
+.label {
+    -fx-font-size: 13px;
+    -fx-text-fill: #444;
+}
+
+/* Bold values */
+#lblNama, #lblBus, #lblLocation, 
+#lblSeat, #lblGender, #lblPhone,
+#lblDate, #lblTicketPrice, 
+#lblAdminFee {
+    -fx-font-weight: bold;
+    -fx-text-fill: #111;
+}
+
+/* Total section */
+.total-label {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+.total-amount {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1e88ff;
+}
+
+/* Print button */
+.print-btn {
+    -fx-background-color: #1e88ff;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 20;
+    -fx-padding: 6 20;
+}
+
+.print-btn:hover {
+    -fx-background-color: #1565c0;
+    -fx-cursor: hand;
+}
+
+/* Footer */
+.footer-text {
+    -fx-font-size: 12px;
+    -fx-text-fill: #777;
+}
+
+/* Separator style */
+.separator .line {
+    -fx-border-color: #d0d7e2;
+}

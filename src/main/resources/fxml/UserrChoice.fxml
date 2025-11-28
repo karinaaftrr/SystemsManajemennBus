@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane prefHeight="490.0" prefWidth="750.0" stylesheets="@/style/userrchoice.css" xmlns="http://javafx.com/javafx/13" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.systemmanagemenbus.UserrChoiceController">
+
+    <children>
+        <AnchorPane prefHeight="490.0" prefWidth="750.0" styleClass="mainFxmlClass" stylesheets="@../style/userrchoice.css">
+
+            <children>
+
+                <!-- LOGO / GAMBAR -->
+                <ImageView fitHeight="80.0" fitWidth="140.0" layoutX="326.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Image/bus.png" />
+                    </image>
+                </ImageView>
+
+                <!-- BUTTON ADMIN -->
+                <Button layoutX="314.0" layoutY="280.0" onAction="#loginAdmin" prefHeight="35.0" prefWidth="198.0" styleClass="btn-admin" text="Admin" />
+
+                <!-- BUTTON MAHASISWA -->
+                <Button layoutX="314.0" layoutY="327.0" onAction="#ChoiceAccount" prefHeight="35.0" prefWidth="198.0" styleClass="btn-ctm" stylesheets="@../style/userrchoice.css" text="Customer" />
+            <Text fill="WHITE" layoutX="326.0" layoutY="260.0" styleClass="title-label" text="InfoBus">
+               <font>
+                  <Font name="Arial Black" size="38.0" />
+               </font>
+            </Text>
+
+            </children>
+
+        </AnchorPane>
+    </children>
+</StackPane>

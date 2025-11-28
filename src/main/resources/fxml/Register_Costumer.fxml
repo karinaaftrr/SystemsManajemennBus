@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane prefHeight="490.0" prefWidth="800.0"
+           styleClass="mainFxmlClass"
+           stylesheets="@/style/register_costumer.css"
+           xmlns="http://javafx.com/javafx/13"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="Customers.Register_CustomerController">
+
+    <children>
+        <AnchorPane fx:id="main_form"
+                    prefHeight="490.0"
+                    prefWidth="800.0">
+
+            <!-- PANEL KIRI -->
+            <AnchorPane prefHeight="500.0"
+                        prefWidth="392.0"
+                        styleClass="left-form"
+                        stylesheets="@../style/register_costumer.css">
+
+                <children>
+                    <ImageView fitHeight="80"
+                               fitWidth="140"
+                               layoutX="132.0"
+                               layoutY="171.0">
+                        <image>
+                            <Image url="@../Image/bus.png" />
+                        </image>
+                    </ImageView>
+
+                    <Text fill="WHITE"
+                          layoutX="132.0"
+                          layoutY="281.0"
+                          text="InfoBus">
+                        <font>
+                            <Font name="Arial Black" size="38" />
+                        </font>
+                    </Text>
+                </children>
+            </AnchorPane>
+
+            <!-- PANEL KANAN -->
+            <AnchorPane layoutX="392.0"
+                        prefHeight="500.0"
+                        prefWidth="408.0"
+                        styleClass="right-form"
+                        stylesheets="@../style/register_costumer.css">
+
+                <children>
+
+                    <Label layoutX="163.0"
+                           layoutY="112.0"
+                           text="REGISTER">
+                        <font>
+                            <Font name="Arial Black" size="20" />
+                        </font>
+                    </Label>
+
+                    <!-- FULL NAME -->
+                    <TextField fx:id="txtFullName"
+                               layoutX="110.0"
+                               layoutY="172.0"
+                               prefHeight="30"
+                               prefWidth="220"
+                               promptText="Full Name"
+                               styleClass="textfield" />
+
+                    <!-- USERNAME -->
+                    <TextField fx:id="txtUsername"
+                               layoutX="110.0"
+                               layoutY="209.0"
+                               prefHeight="30"
+                               prefWidth="220"
+                               promptText="Username"
+                               styleClass="textfield" />
+
+                    <!-- PASSWORD -->
+                    <PasswordField fx:id="txtPassword"
+                                   layoutX="110.0"
+                                   layoutY="250.0"
+                                   prefHeight="30"
+                                   prefWidth="220"
+                                   promptText="Password"
+                                   styleClass="textfield" />
+
+                    <!-- BUTTON REGISTER -->
+                    <Button fx:id="btnRegister"
+                            layoutX="170.0"
+                            layoutY="313.0"
+                            onAction="#handleRegister"
+                            prefHeight="37"
+                            prefWidth="100"
+                            styleClass="login-btn"
+                            stylesheets="@../style/register_costumer.css"
+                            text="REGISTER" />
+
+                    <!-- BUTTON BACK -->
+                    <Button layoutX="10"
+                            layoutY="10"
+                            onAction="#handleBack"
+                            styleClass="close"
+                            text="←">
+                        <font>
+                            <Font name="System Bold" size="9.0" />
+                        </font>
+                    </Button>
+
+                </children>
+
+            </AnchorPane>
+        </AnchorPane>
+    </children>
+</StackPane>

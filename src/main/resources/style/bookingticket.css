@@ -1,0 +1,141 @@
+/* ================= FONT & ROOT ================= */
+.root {
+    -fx-font-family: "Segoe UI";
+    -fx-background-color: #f2f6fc;
+}
+
+.mainFxmlClass {
+    -fx-background-color: white;
+}
+
+/* ================= LEFT SIDEBAR ================= */
+.left-form {
+    -fx-background-color: linear-gradient(to bottom, #051937, #003466, #0a1a2f);
+}
+
+/* ================= TEXT CONTROL ================= */
+/* HAPUS GLOBAL WHITE! */
+/* Yang putih hanya untuk panel gelap saja */
+.left-form .label,
+.left-form .text,
+.customer-panel .label,
+.customer-panel .text {
+    -fx-text-fill: white;
+}
+
+/* Text untuk panel putih */
+.select-customer-panel .label,
+.select-customer-panel .text {
+    -fx-text-fill: black;
+}
+
+/* ================= BUTTON DEFAULT ================= */
+.button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #d9ecff;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-border-color: #74b3ff;
+    -fx-border-width: 1.2;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #74b3ff;
+    -fx-text-fill: #051937;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-effect: dropshadow(gaussian, #74b3ff, 12, 0.6, 0, 0);
+}
+
+/* ================= LOGOUT ================= */
+#btnLogout {
+    -fx-background-color: red;
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+}
+
+#btnLogout:hover {
+    -fx-background-color: darkred;
+}
+
+/* ================= PANEL ATAS (CUSTOMER INFORMATION) ================= */
+.customer-panel {
+    -fx-background-color: linear-gradient(to bottom, #051937, #003466, #0a1a2f);
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-padding: 15;
+}
+
+/* Input style di panel atas */
+.customer-panel .text-field,
+.customer-panel .combo-box,
+.customer-panel .date-picker {
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #74b3ff;
+    -fx-border-width: 1;
+    -fx-background-color: #ffffff;
+}
+
+/* ================= PANEL BAWAH (SELECT CUSTOMER INFORMATION) ================= */
+.select-customer-panel {
+    -fx-background-color: white;
+    -fx-border-color: #d0d0d0;
+    -fx-border-width: 1;
+    -fx-padding: 15;
+}
+
+/* ================= BUTTON RESET ================= */
+#btnReset {
+    -fx-background-color: #c51f1A;
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+    -fx-background-radius: 10;
+    -fx-font-weight: bold;
+}
+
+#btnReset:hover {
+    -fx-background-color: #D21052;
+}
+
+/* ================= BUTTON SELECT ================= */
+#btnSelect {
+    -fx-background-color: #2ecc71;
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+    -fx-background-radius: 10;
+    -fx-font-weight: bold;
+}
+
+#btnSelect:hover {
+    -fx-background-color: #27ae60;
+}
+
+/* ================= BUTTON RECEIPT ================= */
+#btnReceipt {
+    -fx-background-color: #8B4513;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-border-color: transparent;
+    -fx-font-weight: bold;
+}
+
+#btnReceipt:hover {
+    -fx-background-color: #5c2e0f;
+}
+
+/* ================= BUTTON PAY ================= */
+#btnPay {
+    -fx-background-color: #1f6feb;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-border-color: transparent;
+    -fx-font-weight: bold;
+}
+
+#btnPay:hover {
+    -fx-background-color: #174ea6;
+}

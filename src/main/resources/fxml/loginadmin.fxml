@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<StackPane prefHeight="490.0" prefWidth="800.0" styleClass="mainFxmlClass" stylesheets="@/style/loginadmin.css" xmlns="http://javafx.com/javafx/13" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.LoginadminController">
+
+    <children>
+        <!-- Main Form -->
+        <AnchorPane fx:id="main_form" prefHeight="490.0" prefWidth="800.0" styleClass="left-form" stylesheets="@../style/loginadmin.css">
+
+            <!-- Left Panel -->
+            <AnchorPane fx:id="leftPane" prefHeight="500.0" prefWidth="392.0" stylesheets="@../style/loginadmin.css">
+            <children>
+               <ImageView fitHeight="80.0" fitWidth="140.0" layoutX="132.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../Image/bus.png" />
+                  </image>
+               </ImageView>
+               <Text fill="#fffefe" layoutX="132.0" layoutY="281.0" styleClass="title-text" text="InfoBus">
+                  <font>
+                     <Font name="Arial Black" size="38.0" />
+                  </font>
+               </Text>
+            </children></AnchorPane>
+
+            <!-- Right Panel -->
+            <AnchorPane layoutX="392.0" prefHeight="500.0" prefWidth="421.0" styleClass="right-form" stylesheets="@../style/loginadmin.css">
+
+                <!-- Label -->
+                <Label layoutX="203.0" layoutY="176.0" text="Admin" textFill="#211e80">
+                    <font>
+                        <Font name="Arial Black" size="17.0" />
+                    </font>
+                </Label>
+
+                <!-- FontIcon -->
+                <FontIcon iconLiteral="fas-user" iconSize="80" layoutX="197.0" layoutY="158.0" text="" />
+
+                <!-- Username -->
+                <TextField fx:id="username" layoutX="112.0" layoutY="220.0" prefHeight="30.0" prefWidth="220.0" promptText="Username" styleClass="textfield" stylesheets="@../style/loginadmin.css" />
+
+                <!-- Password -->
+                <PasswordField fx:id="password" layoutX="112.0" layoutY="258.0" prefHeight="30.0" prefWidth="220.0" promptText="Password" styleClass="textfield" stylesheets="@../style/loginadmin.css" />
+
+                <!-- Login Button -->
+                <Button fx:id="login" layoutX="193.0" layoutY="304.0" onAction="#login" prefHeight="43.0" prefWidth="79.0" styleClass="login-btn" stylesheets="@../style/loginadmin.css" text="LOGIN" />
+
+                <!-- Close Button -->
+                <Button fx:id="btnClose" layoutX="356.0" layoutY="14.0" onAction="#handleClose" prefHeight="24.0" prefWidth="41.0" styleClass="close" stylesheets="@../style/loginadmin.css" text="">
+                    <graphic>
+                             <FontIcon iconLiteral="fas-window-close" iconSize="20" text="" />
+                    </graphic>
+                </Button>
+
+            </AnchorPane>
+        </AnchorPane>
+    </children>
+</StackPane>

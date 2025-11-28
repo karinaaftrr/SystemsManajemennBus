@@ -1,0 +1,59 @@
+.mainFxmlClass {
+    -fx-background-color: #ffffff;
+    -fx-padding: 0;
+    -fx-spacing: 0;
+    -fx-border-color: #000;
+    -fx-border-width: 0.4px;
+}
+
+/* PANEL KIRI */
+.left-form {
+    -fx-background-color: linear-gradient(to bottom right, #051937, #003466, #0a1a2f);
+    -fx-border-color: #000;
+    -fx-border-width: 0.4px 0px 0.4px 0.4px;
+}
+
+/* PANEL KANAN */
+.right-form {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #000;
+    -fx-border-width: 0.4px 0.4px 0.4px 0px;
+}
+
+/* TOMBOL CLOSE */
+.close {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+.close:hover {
+    -fx-background-color: #dd4763;
+}
+
+/* TEXT FIELD (Name, Username, Password) */
+.textfield {
+    -fx-background-color: transparent;
+    -fx-border-color: #000;
+    -fx-border-width: 0 0 0.8px 0;
+    -fx-font-size: 13px;
+    -fx-font-family: "Tahoma";
+}
+
+.textfield:focused {
+    -fx-border-color: linear-gradient(to bottom right, #753036, #3c8256);
+    -fx-border-width: 0 0 1.8px 0;
+}
+
+/* TOMBOL REGISTER / LOGIN */
+.login-btn {
+    -fx-background-color: linear-gradient(to bottom, #000080, #539679);
+    -fx-background-radius: 8px;
+    -fx-font-size: 14px;
+    -fx-text-fill: #ffffff;
+    -fx-font-family: "Arial";
+    -fx-cursor: hand;
+}
+
+.login-btn:hover {
+    -fx-background-color: linear-gradient(to bottom, #000080, #539679);
+}
